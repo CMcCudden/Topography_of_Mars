@@ -55,8 +55,23 @@ ax = label_features(ax)
 ax.axis('off')
 newax = fig.add_axes([0.82, 0.13, 0.08, 0.08], anchor='NE')
 newax.axis('off')
-txt = ax.text(0.0, 0.02, "Martian Topography \n@PythonMaps",
+txt = ax.text(0.0, 0.02, "Martian Topography \n@CMcCudden",
               size=4,
               color='white',
               transform=ax.transAxes)
 plt.show()
+
+# moon = rasterio.open('/Users/caleb/Documents/QGIS STUFF/Lunar_LRO_LOLA_Global_LDEM_118m_Mar2014.tif')
+# moon.read()
+#
+# print(moon.shape)
+# # print(np.amin(moon[0]))
+# # print(np.amax(moon[0]))
+# # print(np.amax(moon[0]) + abs(np.amin(moon[0])))
+# fig, ax = plt.subplots()
+# fig.set_size_inches(14, 7)
+#
+# ax.imshow(moon[0], cmap="viridis")
+# ax.axis('off')
+#
+# # plt.show()
